@@ -21,8 +21,6 @@ public class MyRouteBuilder extends RouteBuilder {
         propParser.setPassword("sys:jasyptMasterPassword");
 
         PropertiesComponent propComponent = (PropertiesComponent) context.getPropertiesComponent();
-//        getContext()
-//                                .getComponent("properties");
         propComponent.setLocation("classpath:application.properties");
         propComponent.setPropertiesParser(propParser);
 
